@@ -1,372 +1,281 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- ⚠️ NOTE: Google Analytics script from the original page is typically placed here. 
-    It is omitted for security and environment neutrality. -->
-    
-    <!-- Load Tailwind CSS for responsive styling -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                }
-            }
-        }
-    </script>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Original favicon and CSS link below are kept as comments since the files are not available: -->
-    <!-- <link rel="shortcut icon" href="/images/ico.ico" type="image/x-icon"> -->
-    <!-- <link rel="stylesheet" href="/storage/css/index.css"> -->
-    
-    <title>Home | Seraph (Locked)</title>
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7FN7LEVWXD"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
-    <meta name="description" content="an open source games site hosting 500+ games, useful utilities, powerful settings + a clean user interface">
-    <meta property="og:site_name" content="seraph">
-    <meta property="og:title" content="seraph">
-    <meta property="og:type" content="website">
-    <meta property="og:description" content="an open source games site hosting 500+ games, useful utilities, powerful settings + a clean user interface">
+          gtag('config', 'G-7FN7LEVWXD');
+        </script>
 
-    <style>
-        /* This custom CSS handles visibility and the typewriter effect.
-        The styles originally in /storage/css/index.css have been largely replaced by Tailwind classes 
-        in the HTML body for the one-file requirement. 
-        */
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/images/ico.ico" type="image/x-icon">
+        <link rel="stylesheet" href="/storage/css/index.css">
+        <title>Home | Seraph</title>
+
+        <meta name="description" content="an open source games site hosting 500+ games, useful utilities, powerful settings + a clean user interface">
+        <meta property="og:site_name" content="seraph">
+        <meta property="og:title" content="seraph">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="an open source games site hosting 500+ games, useful utilities, powerful settings + a clean user interface">
+  </head>
+  <body>
+    
+     <div id="blackout"></div>
+     <div id="updPopup">
+        <img src="/images/other/v10image.jpg" style="width: 90%;">
+        <br><br>
+        <h2 style="font-size: 28px; text-decoration: underline;">version 10 / patch notes</h2>
+
+        <div id="updContent">
+            <ul style="text-align: left;">
+                <li>offline mode
+                  <ul>
+                    <li>download 200+ games from the site by clicking the download button to the left of them</li>
+                    <li>after one game is downloaded, loading the site without an internet connection will send you to an offline version on the site where you can access downloaded games</li>
+                    <li>supports ruffle/flash + works seamlessly with compatible games</li>
+                  </ul>
+                </li>
+                <li>added 132 games
+                            <li>sega genesis: comix zone, ecco the dolphin, gunstar heroes, phantasy star iv, ranger x, ristar, shining force, shinobi iii, sonic the hedgehog, sonic the hedgehog 2, streets of rage 2, vectorman, vectorman 2</li>
+                            <li>game boy: kirby’s dreamland 2, link’s awakening dx, metroid ii, super mario land 2, warioland ii, castlevania: aria of sorrow, final fantasy tactics advance, drill dozer, pokemon yellow</li>
+                            <li>nes: battle toads, castlevania iii, contra, duck tales, kid icarus, mega man 2, ninja gaiden, mike tyson’s punch out</li>
+                            <li>snes: chrono trigger, contra iii, donkey kong country 3, earthbound, final fantasy iv, f-zero, super metroid, illusion of gaia</li>
+                            <li>n64: banjo tooie, harvest moon 64, jet force gemini, mystical ninja, turok dinosaur hunter, yoshi’s story</li>
+                            <li>nintendo ds: advance wars: days of ruin, castlevania: dawn of sorrow, castlevania: order of ecclesia, mario and luigi: partners in time</li>
+                        </li>
+                        <li>flash games: abuda the alien, battle beavers, controlcraft 2, age of war, age of war 2, amorphous, bubble spinner, crush the castle, crush the castle 2, epic battle fantasy, epic battle fantasy 2, epic battle fantasy 3, fancy pants adventure 3, flood runner 2, flood runner 3, dragon boy 2, neon rider, pandemic 2, stick war, stick war 2, ultimate flash sonic, zombocalpyse, zombotron, zombotron 2, three line, bike champ, bike champ 2, corporation inc, shop empire fable, wubzzy’s amazing adventure</li>
+                        <li>nitrome games: canopy, cave chaos, changetype(), cheese dreams, chisel, chisel 2, ditto, feed me, final ninja, frost bite, frost bite 2, ice breaker, mutiny, nitrome must die, oodlegobs, super treadmill, swindler, test subject arena, test subject complete, twin shot, twin shot 2</li>
+                        <li>flipline games: cactus mccoy, cactus mccoy 2, papa louie, papa louie 2, papa louie 3, steak and jake, steak and jake: midnight march</li>
+                        <li>other games: backrooms 2d, basket random, csgo clicker, doom, funny shooter 2, gun fest, infinite craft, lows adventures 2, pako highway, recoil, run 3 plus, slope city, state io, sudoku, superhero drop, balloon run, crazy tunnel 3d, eaglercraft 1.8, geometry dash sky, gold digger frvr, hexgl, house of hazards, pick crafter, precision client, subway runner, xx142-b2.exe</li>
+                      </ul>
+                    </li>
+                    <li>added 4 apps:</li>
+                      <ul>
+                        <li>calculator: a simple calculator, allowing you to perform simple addition, subtraction, multiplication and division</li>
+                        <li>etch a sketch: create digital pixel drawings - mimicking the experience of an etch-a-sketch with quality of life features</li>
+                        <li>zip opener: directly upload and view/download individual files inside a zip archive</li>
+                        <li>godoblocks: a mimick of the 2005 roblox beta era - recreated entirely in godot</li>
+                      </ul>
+                    </li>
+                    <li>fixed friday night funkin & drift hunters</li>
+                  </ul>
+                </li>
+                <br>
+                <li>settings overhaul
+                  <ul>
+                    <li>new data management section
+                      <ul>
+                        <li>import/export data into save files, allowing for transfer over multiple sites</li>
+                        <li>clear all data off the site with the clear data button</li>
+                      </ul>
+                    </li>
+                    <li>new panic mode
+                      <ul>
+                        <li>customise a panic key (defaults to ctrl+shift+p)</li>
+                        <li>customise a panic url (defaults to https://www.desmos.com/scientific)</li>
+                        <li>perform the shortcut on any page to instantly delete all contents of the site and redirect to the panic url</li>
+                      </ul>
+                    </li>
+                    <li>custom theme updates
+                      <ul>
+                        <li>added ability to export and import custom themes directly into the site, allowing for ease of access switching + sharability</li>
+                        <li>custom themes now do not require a refresh of the page every time</li>
+                      </ul>
+                    </li>
+                    <li>new theme: ghostly - an abandoned town, said to be haunted by spirits lurking within</li>
+                    <li>added open games in same tab setting</li>
+                    <li>fixed tab cloaking not working on lots of pages, now works globally</li>
+                    <li>tab cloak and resetting auto applies now with page refresh</li>
+                    <li>removed tooltips to condense space</li>
+                    <li>significantly improved animation</li>
+                  </ul>
+                </li>
+                <li>seraphim - mobile update
+                  <ul>
+                    <li>mobile version is now detachable from seraph and can be hosted separately</li>
+                    <li>converted games and apps from buttons to app icons for a more unique interface</li>
+                    <li>blurred all theme backgrounds to help contrast content more on smaller screens</li>
+                    <li>now integratable with ios! open seraphim in safari > more > add to home page</li>
+                    <li>setting bars now stack instead of appearing next to each other</li>
+                    <li>games are now sorted in alphabetical order</li>
+                    <li>custom themes are now compatible with mobile mode</li>
+                    <li>mobile now uses new and consolidated stylesheet</li>
+                    <li>scripts on page now execute in one instead of being fragmented</li>
+                    <li>removed games/apps opening in a blank tab</li>
+                    <li>adjusted meta tags to fit the site</li>
+                  </ul>
+                </li>
+                <li>updates page
+                  <ul>
+                    <li>update log page is now a dropdown menu instead of a long page - scales down from version 10 all the way to version 1</li>
+                    <li>improved animation on page load</li>
+                    <li>fixed header glowing bug on page, making a weird background effect</li>
+                  </ul>
+                </li>
+                <li>other changes
+                  <ul>
+                    <li>homepage now has dedicated big settings button</li>
+                    <li>shrunk down app size slightly</li>
+                    <li>added update popup for whenever there is a new update - shown on the homepage</li>
+                    <li>404 page now has a previous page button</li>
+                    <li>fixed errors with 404 page styling, images and fonts</li>
+                    <li>fixed errors with 404 linkbar links redirecting to wrong parts of the site</li>
+                    <li>mobile users are now not automatically redirected to the mobile friendly version of the site on the homepage</li>
+                    <li>background image bandwidth has been significantly downgraded by 50-90%</li>
+                    <li>game thumbnails total bandwidth reduced significantly (19.2mb > 2.2mb)</li>
+                    <li>favicon is now improved to give a more rounded design</li>
+                    <li>fixed homepage size on mozilla browsers</li>
+                    <li>star/cross icon is now an image icon instead of using unicode characters</li>
+                    <li>themes.css now is used in place of having all stylesheets have different schemes</li>
+                    <li>polished readme file, adding more content to it and removing unnecessary information</li>
+                    <li>changed placeholder image (displays when there is no current thumbnail for a game)</li>
+                    <li>css stylesheets have been renamed to make it easier to sort through</li>
+                  </ul>
+                </li>
+              </ul>        
+        </div>
+        <div id="updConfirmFrame"><button id="updConfirm">okay</button></div>
+      </div>
+
+      
+      <div class="content-side">
+          <h1 class="typewriter"><span id="cursor"></span></h1>
+          <h2>version 10 / release build</h2>
+          <br>
+
+          <div class="button-container">
+              <div class="gamesbutton" onclick="window.location='games/index.html';">
+                  <img src="images/other/controller.png">
+                  <div class="button-text">
+                      <p>games</p>
+                  </div>
+              </div>
+          
+              <div class="gamesbutton" onclick="window.location='apps/index.html';">
+                  <a href="apps/index.html"><img src="images/other/apps.png"></a>
+                  <div class="button-text">
+                      <p>apps</p>
+                  </div>
+              </div>
+
+              <div class="gamesbutton" onclick="window.location='settings.html';">
+                <a href="settings.html"><img src="images/other/settings.png"></a>
+                <div class="button-text">
+                    <p>settings</p>
+                </div>
+            </div>
+          </div>
+          
+
+          <br>
+
+          <p class="linkp"><a href="/seraphim/index.html">mobile</a> • <a href="host.html">rehost</a> • <a id="openBlankLink">open blank</a></p>
+          <p class="linkp"><a href="https://discord.gg/ZyZDmx3zuQ" target="_blank">discord</a> • <a href="updatelog.html">update log</a> • <a href="https://github.com/a456pur/seraph" target="_blank">source code</a> </p>
+          
+          <br>
+          <a href="https://github.com/a456pur" target="_blank" style="text-decoration: none;">˗ˏˋ❀ website created/developed by @a456pur ❀ ´ˎ˗</a>
         
-        /* Hide all page content by default for password lock */
-        #main-content {
-            visibility: hidden;
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out;
-        }
+      </div>
 
-        /* Styling for the typewriter effect's cursor */
-        #cursor {
-            display: inline-block;
-            width: 8px;
-            height: 1.2em;
-            background-color: white;
-            animation: blink 0.7s infinite;
-            margin-left: 4px;
-        }
-
-        @keyframes blink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0; }
-        }
-
-        /* Custom styling for the buttons (replacing the original index.css structure) */
-        .gamesbutton {
-            transition: transform 0.2s, box-shadow 0.2s;
-            cursor: pointer;
-        }
-        .gamesbutton:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-        }
-    </style>
-</head>
-
-<body class="bg-gray-900 text-gray-100 font-sans min-h-screen flex items-center justify-center p-4">
-
-    <!-- 🔒 PASSWORD PROTECTION OVERLAY 🔒 -->
-    <!-- This replaces the insecure browser 'prompt()' with a custom, styled modal, which is required -->
-    <div id="passwordOverlay" class="fixed inset-0 bg-gray-900 bg-opacity-95 backdrop-blur-md flex items-center justify-center z-50">
-        <div class="bg-gray-800 p-8 md:p-12 rounded-xl shadow-2xl max-w-sm w-full border-2 border-indigo-500/50">
-            <h2 class="text-3xl font-bold mb-4 text-center text-indigo-400">Access Required</h2>
-            <p class="text-gray-300 text-center mb-6">Enter the secret password to continue to Seraph.</p>
-            
-            <input type="password" id="passwordInput" placeholder="Password" 
-                   class="w-full px-4 py-3 mb-4 rounded-lg bg-gray-700 text-white placeholder-gray-400 focus:ring-indigo-500 focus:border-indigo-500 border-gray-600">
-            
-            <button id="submitPassword" 
-                    class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 rounded-lg transition duration-200 shadow-md">
-                Unlock Site
-            </button>
-
-            <p id="passwordError" class="text-red-400 text-center mt-4 hidden"></p>
-        </div>
-    </div>
-    <!-- END PASSWORD OVERLAY -->
-
-    <!-- MAIN CONTENT CONTAINER (Initially hidden) -->
-    <div id="main-content" class="w-full max-w-3xl">
-
-        <!-- Original Blackout/Update Popup Structure (Styled to fit Tailwind) -->
-        <div id="blackout" class="fixed inset-0 bg-black bg-opacity-70 z-40 hidden"></div>
-        <div id="updPopup" class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gray-800 p-8 rounded-xl shadow-2xl max-w-lg w-11/12 z-50 overflow-y-auto max-h-[90vh] hidden">
-            <!-- Mocking the original image/content -->
-            <img src="https://placehold.co/450x150/1e293b/9ca3af?text=Version+10+Image" style="width: 90%;" class="mx-auto rounded-lg mb-4">
-            <h2 class="text-3xl font-bold mb-4 text-indigo-400 text-center border-b border-indigo-400 pb-2">version 10 / patch notes</h2>
-
-            <div id="updContent" class="text-gray-300 text-sm">
-                <!-- Original Patch Notes Content -->
-                <ul class="list-disc pl-5 space-y-2">
-                    <li><span class="font-semibold text-white">offline mode</span>
-                        <ul class="list-circle pl-5 text-gray-400 mt-1">
-                            <li>download 200+ games from the site by clicking the download button to the left of them</li>
-                            <li>after one game is downloaded, loading the site without an internet connection will send you to an offline version on the site where you can access downloaded games</li>
-                        </ul>
-                    </li>
-                    <li><span class="font-semibold text-white">added 132 games</span> (selection of retro, flash, and other titles...)</li>
-                    <li><span class="font-semibold text-white">settings overhaul</span>
-                        <ul class="list-circle pl-5 text-gray-400 mt-1">
-                            <li>new data management section (import/export data)</li>
-                            <li>new panic mode (customisable panic key/url)</li>
-                            <li>custom theme updates (export/import)</li>
-                        </ul>
-                    </li>
-                    <li><span class="font-semibold text-white">seraphim - mobile update</span> (optimized for small screens)</li>
-                    <li><span class="font-semibold text-white">updates page</span> (now a dropdown menu)</li>
-                    <li><span class="font-semibold text-white">other changes</span> (performance improvements, favicon update, bug fixes)</li>
-                </ul>
-            </div>
-            <div id="updConfirmFrame" class="mt-6 text-center">
-                <button id="updConfirm" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-6 rounded-lg transition duration-200">
-                    okay
-                </button>
-            </div>
-        </div>
-        <!-- END Update Popup -->
-
-        <!-- Main Content (Home Page) -->
-        <div class="content-side text-center">
-            <h1 class="text-6xl md:text-8xl font-extrabold mb-2 typewriter text-indigo-400">
-                <span id="typewriterText"></span><span id="cursor"></span>
-            </h1>
-            <h2 class="text-xl md:text-2xl font-light text-gray-400 mb-8">version 10 / release build</h2>
-
-            <div class="button-container flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-8">
-                
-                <div class="gamesbutton p-6 bg-gray-800 rounded-xl shadow-lg border border-gray-700 hover:border-indigo-500" onclick="window.location='games/index.html';">
-                    <!-- Original image src="/images/other/controller.png" is replaced with a placeholder -->
-                    <img src="https://placehold.co/60x60/1e293b/9ca3af?text=🎮" class="mx-auto h-16 w-16 mb-2" onerror="this.src='https://placehold.co/60x60/1e293b/9ca3af?text=G'">
-                    <div class="button-text"><p class="text-lg font-semibold text-white">games</p></div>
-                </div>
-            
-                <div class="gamesbutton p-6 bg-gray-800 rounded-xl shadow-lg border border-gray-700 hover:border-indigo-500" onclick="window.location='apps/index.html';">
-                    <!-- Original image src="/images/other/apps.png" is replaced with a placeholder -->
-                    <a href="apps/index.html"><img src="https://placehold.co/60x60/1e293b/9ca3af?text=📱" class="mx-auto h-16 w-16 mb-2" onerror="this.src='https://placehold.co/60x60/1e293b/9ca3af?text=A'"></a>
-                    <div class="button-text"><p class="text-lg font-semibold text-white">apps</p></div>
-                </div>
-
-                <div class="gamesbutton p-6 bg-gray-800 rounded-xl shadow-lg border border-gray-700 hover:border-indigo-500" onclick="window.location='settings.html';">
-                    <!-- Original image src="/images/other/settings.png" is replaced with a placeholder -->
-                    <a href="settings.html"><img src="https://placehold.co/60x60/1e293b/9ca3af?text=⚙️" class="mx-auto h-16 w-16 mb-2" onerror="this.src='https://placehold.co/60x60/1e293b/9ca3af?text=S'"></a>
-                    <div class="button-text"><p class="text-lg font-semibold text-white">settings</p></div>
-                </div>
-            </div>
-
-            <div class="mt-10 text-center space-y-2">
-                <p class="text-gray-500 linkp space-x-4">
-                    <a href="/seraphim/index.html" class="hover:text-indigo-400 transition">mobile</a> • 
-                    <a href="host.html" class="hover:text-indigo-400 transition">rehost</a> • 
-                    <a id="openBlankLink" href="#" class="hover:text-indigo-400 transition">open blank</a>
-                </p>
-                <p class="text-gray-500 linkp space-x-4">
-                    <a href="https://discord.gg/ZyZDmx3zuQ" target="_blank" class="hover:text-indigo-400 transition">discord</a> • 
-                    <a href="updatelog.html" class="hover:text-indigo-400 transition">update log</a> • 
-                    <a href="https://github.com/a456pur/seraph" target="_blank" class="hover:text-indigo-400 transition">source code</a>
-                </p>
-            </div>
-            
-            <a href="https://github.com/a456pur" target="_blank" class="block mt-8 text-sm text-gray-600 hover:text-indigo-400 transition">
-                ˗ˏˋ❀ website created/developed by @a456pur ❀ ´ˎ˗
-            </a>
-        </div>
-
-    </div>
-    <!-- END MAIN CONTENT CONTAINER -->
-    
-    <!-- SCRIPTS -->
-
-    <!-- Password Protection Logic -->
-    <script>
-        // 1. DEFINE YOUR PASSWORD HERE
-        // ⚠️ WARNING: This is a client-side lock. The password is visible in the page source.
-        const CORRECT_PASSWORD = "ELIGOATED"; 
-        const UNLOCK_KEY = 'seraph_site_unlocked';
-
-        const overlay = document.getElementById('passwordOverlay');
-        const mainContent = document.getElementById('main-content');
-        const input = document.getElementById('passwordInput');
-        const submitButton = document.getElementById('submitPassword');
-        const errorText = document.getElementById('passwordError');
-
-        // Function to unlock the page
-        function unlockSite() {
-            mainContent.style.visibility = 'visible';
-            mainContent.style.opacity = '1';
-            overlay.classList.add('hidden');
-        }
-
-        // Handle password submission
-        function handlePasswordSubmit() {
-            const enteredPassword = input.value.trim();
-            if (enteredPassword === CORRECT_PASSWORD) {
-                // Correct password: hide overlay, show content, and set session flag
-                sessionStorage.setItem(UNLOCK_KEY, 'true');
-                unlockSite();
-            } else {
-                // Incorrect password: display error message
-                errorText.textContent = "Incorrect password. Try again.";
-                errorText.classList.remove('hidden');
-                input.value = ''; // Clear input
-                input.focus();
-            }
-        }
-
-        // Event listeners for submission
-        submitButton.addEventListener('click', handlePasswordSubmit);
-        input.addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                handlePasswordSubmit();
-            }
-        });
-
-        // Initial check on load
-        document.addEventListener('DOMContentLoaded', function () {
-            // Check if already unlocked in session
-            if (sessionStorage.getItem(UNLOCK_KEY) === 'true') {
-                unlockSite();
-            } else {
-                // If not unlocked, ensure content is hidden and overlay is shown
-                mainContent.style.visibility = 'hidden';
-                mainContent.style.opacity = '0';
-                overlay.classList.remove('hidden');
-                // Set initial focus to the input
-                setTimeout(() => input.focus(), 100);
-            }
-        });
-    </script>
-
-    <!-- Original Scripts (Adapted for single file) -->
-    
-    <!-- Service Worker/Offline Mode Script (Original path: '/offline-worker.js') -->
-    <script>
-        // Functionality mocked as the external file is not available.
+      <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function() {
-                /*
                 navigator.serviceWorker.register('/offline-worker.js').then(function(registration) {
                     console.log('service worker initalised! scope:', registration.scope);
+        
+                    navigator.serviceWorker.addEventListener('message', function(event) {
+                        if (event.data === 'cached') {
+                            document.getElementById('cache-status').style.display = 'block';
+                        }
+                    });
                 }, function(error) {
                     console.log('ack, error with serviceworker! ', error);
                 });
-                */
             });
         }
-    </script>
 
-    <!-- Update Popup Display Logic -->
-    <script>
+      </script>
+
+      <script>
         document.addEventListener('DOMContentLoaded', function () {
-            const updPopup = document.getElementById('updPopup');
-            const blackout = document.getElementById('blackout');
-            const updConfirm = document.getElementById('updConfirm');
-            
             if (!localStorage.getItem('v10-update')) {
-                // Only show if not seen before in localStorage
-                blackout.classList.remove('hidden');
-                updPopup.classList.remove('hidden');
+                document.getElementById('blackout').style.display = 'block';
+                document.getElementById('updPopup').style.display = 'block';
                 localStorage.setItem('v10-update', 'true');
             }
-            
-            // Handle 'okay' button click
-            updConfirm.addEventListener('click', function () {
-                blackout.classList.add('hidden');
-                updPopup.classList.add('hidden');
+            document.getElementById('updConfirm').addEventListener('click', function () {
+                document.getElementById('blackout').style.display = 'none';
+                document.getElementById('updPopup').style.display = 'none';
             });
         });
-    </script>
-    
-    <!-- Typewriter Effect Script -->
-    <script>
+      </script>
+      <script>
         const text = "seraph";
-        const typingDelay = 100; // Faster typing for better UX
-        const initialDelay = 100;
+        const typingDelay = 500; 
+        const initialDelay = 100; 
         const cursor = document.getElementById("cursor");
-        const h1Text = document.getElementById("typewriterText");
+        const h1 = document.querySelector(".typewriter");
 
         function type() {
             setTimeout(() => {
-                let i = 0;
-                function typeNextCharacter() {
-                    if (i < text.length) {
-                        h1Text.textContent += text[i];
-                        i++;
-                        setTimeout(typeNextCharacter, typingDelay);
-                    } else {
-                        cursor.style.display = "none";
+                for (let i = 0; i < text.length; i++) {
+                setTimeout(() => {
+                    h1.textContent += text[i];
+                    if (i === text.length - 1) {
+                    cursor.style.display = "none"; 
                     }
+                }, i * typingDelay);
                 }
-                typeNextCharacter();
             }, initialDelay);
         }
 
-        // Only run typewriter effect if the content is visible (i.e., password entered)
-        if (sessionStorage.getItem(UNLOCK_KEY) === 'true') {
-            type();
-        } else {
-            // Wait for password unlock before starting
-            document.getElementById('submitPassword').addEventListener('click', () => {
-                if (input.value.trim() === CORRECT_PASSWORD) {
-                    type();
-                }
-            });
-        }
-    </script>
+        type();
+      </script>
 
-    <!-- Open Blank Link Script -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var openBlankLink = document.getElementById('openBlankLink');
-            
+        
             openBlankLink.addEventListener('click', function(event) {
                 event.preventDefault();
-                
+        
                 var newTab = window.open('about:blank', '_blank');
-                
+        
                 if (newTab) {
-                    // Inject basic styles for a full-screen iframe
-                    newTab.document.write(`
-                        <html>
-                            <head>
-                                <title>Blank Tab</title>
-                                <style>
-                                    body { margin: 0; padding: 0; overflow: hidden; }
-                                    iframe { width: 100vw; height: 100vh; border: none; }
-                                </style>
-                            </head>
-                            <body>
-                                <iframe id="mainIframe" src="${window.location.href}"></iframe>
-                            </body>
-                        </html>
-                    `);
-                    newTab.document.close(); // Close the write stream
+                    var newTabBody = newTab.document.body;
+                    newTabBody.style.padding = '0';
+                    newTabBody.style.margin = '0';
+                    newTabBody.style.border = 'hidden';
+        
+                    var iframe = document.createElement('iframe');
+                    iframe.src = window.location.href;
+                    iframe.style.width = '100%';
+                    iframe.style.height = '100%';
+                    iframe.style.border = 'hidden';
+
+                    iframe.onload = function() {
+                        var links = iframe.contentDocument.querySelectorAll('a[target="_blank"]');
+                        links.forEach(function(link) {
+                            link.addEventListener('click', function(event) {
+                                event.preventDefault();
+                                iframe.contentWindow.location.href = link.href;
+                            });
+                        });
+                    };
+        
+                    newTab.document.body.appendChild(iframe);
                 } else {
-                    // Replaced alert() with console log and message
-                    console.error("Couldn't manage to open a new tab.");
-                    errorText.textContent = "Error: Pop-ups blocked. Cannot open blank tab.";
-                    errorText.classList.remove('hidden');
+                    alert("couldn't manage to open a new tab :(");
                 }
             });
         });
-    </script>
-    
-    <!-- 
-    The following external script references from the original page are preserved as comments
-    but cannot be included in the final single, runnable file:
-    <script src="storage/js/cloak.js"></script>
-    <script src="storage/js/theme.js"></script>
-    <script src="storage/js/cookie.js"></script> 
-    -->
+        </script>    
 
-</body>
+      <script src="storage/js/cloak.js"></script>
+      <script src="storage/js/theme.js"></script>
+      <script src="storage/js/cookie.js"></script>
+  </body>
 </html>
-
